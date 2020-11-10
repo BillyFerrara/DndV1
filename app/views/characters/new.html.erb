@@ -1,0 +1,11 @@
+MAKE A NEW CHARACTER
+<%= form_for @character do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :race %>
+    <%= f.text_field :race %>
+    <%= f.label :class %>
+    <%= f.text_field :class %>
+    <%# <%= f.hidden_field :player_id%> 
+    <%= f.submit %>
+<% end %>
